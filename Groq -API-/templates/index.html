@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Groq API</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css" media="screen" />
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <h1>Teste Groq - API</h1>
+        <textarea name="question" rows="4" placeholder="Digite sua pergunta...">{{ question }}</textarea>
+        <input type="file" name="arquivo">
+        <button type="submit">Enviar</button>
+    
+
+    {% if response %}
+    <div class="response">
+        <strong>Resposta:</strong><br>
+        {{ response }}
+    </div>
+    {% endif %}
+</form>
+</body>
+</html>

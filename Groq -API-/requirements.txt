@@ -1,0 +1,8 @@
+Flask
+groq
+python-dotenv
+python-docx
+PyMuPDF
+Pandas
+openpyxl
+tabulate
